@@ -1,3 +1,1 @@
-# Wine Pairing App
-
-Restaurant trial V15.
+# Wine Pairing App V16
