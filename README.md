@@ -1,3 +1,3 @@
-# Wine Pairing App restaurant trial V14
+# Wine Pairing App
 
-Static Vercel deploy package.
+Restaurant trial V15.
