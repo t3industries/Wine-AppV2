@@ -1,13 +1,19 @@
-# Wine Pairing App — Cloud V19
+# Wine Pairing App — Cloud V20
 
 Cloud browser version using Supabase Auth and Supabase database.
 
-This package removes the `/api/config.js` serverless route and uses the public Supabase project URL/publishable key directly in `index.html`, which is fine for a browser app when Row Level Security is enabled.
+V20 fixes:
+- CSV imported wines now display on blank/new venue accounts.
+- Wine cards no longer assume hard-coded `harvest` / `tasting` menu IDs.
+- Assign-to-menu rows now work with any menu created in the app.
+- Add menu and add course are protected from render errors.
+- Delete all archived wines is wired up.
+- Rendering is safer so one section error does not kill the whole app.
 
-Upload these files to the root of the GitHub repo:
+Deploy by replacing the root files in GitHub:
 - index.html
 - vercel.json
 - README.md
 - supabase_schema.sql
 
-Then redeploy on Vercel.
+Do not upload config.js or api/config.js for this version.
