@@ -1,8 +1,3 @@
-# Wine Pairing App - Restaurant Trial V12
+# Wine Pairing App
 
-Restaurant-facing trial build.
-
-Update notes:
-- Adds a visible sidebar sign-out button so users can leave the sample demo.
-- Sample demo can now be exited without digging into Admin.
-- App still saves to this browser/localStorage until the cloud database/login build is added.
+Restaurant trial build. Static single-page demo for Vercel. Saves data in the current browser via localStorage.
