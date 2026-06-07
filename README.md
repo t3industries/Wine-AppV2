@@ -1,3 +1,8 @@
-# Wine Pairing App Restaurant Trial V11
+# Wine Pairing App - Restaurant Trial V12
 
-Static restaurant trial build. Upload index.html, vercel.json and README.md to the Vercel-connected GitHub repo.
+Restaurant-facing trial build.
+
+Update notes:
+- Adds a visible sidebar sign-out button so users can leave the sample demo.
+- Sample demo can now be exited without digging into Admin.
+- App still saves to this browser/localStorage until the cloud database/login build is added.
