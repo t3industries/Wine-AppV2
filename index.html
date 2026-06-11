@@ -58,7 +58,7 @@ table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(
     <div id="authInfo" class="auth-pane"><h3>What is this?</h3><p class="muted">A restaurant wine-pairing tool. Add your wine list, build food pairings, print guest cards and staff sheets, then record end-of-night ml usage for stock keeping.</p><button class="btn primary" id="infoDemoBtn">Try the sample demo</button></div>
     <p id="authMessage" class="small muted"></p>
   </div>
-  <div class="login-hero"><div class="login-card card"><h2 style="font-size:42px">Pair better. Move smarter. Track usage faster.</h2><p class="muted">Built for venues that pair wine to food and need a practical bridge between the wine list, service decisions and POS stock keeping.</p><div class="mock-screens"><div class="mock-screen"><b>Wine cards</b><div class="mock-line"></div><div class="mock-line med"></div><div class="mock-line short"></div><span class="pill">Open bottle</span> <span class="pill">Coravin</span></div><div class="mock-screen"><b>Print menus</b><div class="mock-line med"></div><div class="mock-line"></div><div class="mock-line short"></div><span class="pill dark">Guest A5</span></div><div class="mock-screen"><b>Usage report</b><div class="mock-line"></div><div class="mock-line med"></div><div class="mock-line"></div></div><div class="mock-screen"><b>Analytics</b><div class="mock-line short"></div><div class="mock-line"></div><div class="mock-line med"></div></div></div></div></div>
+  <div class="login-hero"><div class="login-card card"><h2 style="font-size:42px">Pair better. Move smarter. Track usage faster.</h2><p class="muted">Built for venues that want wine pairings to feel memorable, useful and commercially practical — from guest cards to staff sheets and end-of-night stock keeping.</p><div class="mock-screens"><div class="mock-screen"><b>Wine cards</b><div class="mock-line"></div><div class="mock-line med"></div><div class="mock-line short"></div><span class="pill">Open bottle</span> <span class="pill">Coravin</span></div><div class="mock-screen"><b>Print menus</b><div class="mock-line med"></div><div class="mock-line"></div><div class="mock-line short"></div><span class="pill dark">Guest A5</span></div><div class="mock-screen"><b>Usage report</b><div class="mock-line"></div><div class="mock-line med"></div><div class="mock-line"></div></div><div class="mock-screen"><b>Analytics</b><div class="mock-line short"></div><div class="mock-line"></div><div class="mock-line med"></div></div></div></div></div>
 </div>
 <div class="app" id="appShell">
   <aside>
@@ -75,8 +75,32 @@ table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(
   <main>
     <section id="overview" class="section active">
       <div class="hero">
-        <div class="card"><h2>Food-first wine pairing, with practical service tools built in.</h2><p class="muted">Use this to add your wine list, match wines to dishes, print guest and staff pairing sheets, and record bottle-fraction usage for stock keeping.</p><div class="grid cols3" style="margin-top:16px"><div class="kpi"><div class="label">Wines</div><div class="num" id="kpiWines">0</div><div class="hint">Add, flag and assign.</div></div><div class="kpi"><div class="label">Courses</div><div class="num" id="kpiCourses">0</div><div class="hint">Editable food and pairings.</div></div><div class="kpi"><div class="label">Usage today</div><div class="num" id="kpiBottles">0.00</div><div class="hint">Bottle fractions for POS.</div></div></div><div class="callout" style="margin-top:16px"><b>Cloud note:</b> once Supabase is connected, venue data saves to the cloud and can be opened across devices with the same login. Sample demo data remains local/testing only.</div></div>
-        <div class="card"><h3 style="font-size:24px;margin-bottom:12px">Service workflow</h3><div class="list"><div class="listitem"><b>1. Add your wine list</b><p>Use Admin → Wines / import to add wines manually or upload the CSV template.</p></div><div class="listitem"><b>2. Build the menu pairing</b><p>Edit dishes, assign wines and set pour sizes.</p></div><div class="listitem"><b>3. Print service sheets</b><p>Guest card for the table. Staff sheet for notes, facts and open-drink pricing.</p></div><div class="listitem"><b>4. Save usage</b><p>Enter pairing sets and any individual glasses poured for stock tracking.</p></div></div></div>
+        <div class="card">
+          <span class="pill dark">Food-first wine service</span>
+          <h2 style="margin-top:12px">Pair better. Move smarter. Give guests a story to tell.</h2>
+          <p class="muted">Wine pairing should feel like part of the restaurant experience, not an afterthought. Use this app to guide staff toward wines that suit the food, showcase bottles guests may never normally order, and create memorable moments around new grape varieties, regions and producers.</p>
+          <p class="muted">A thoughtful pairing gives guests something to talk about after they leave — to friends, regulars, the hairdresser or the mailman. That word-of-mouth is still one of the strongest ways to build excitement around a venue.</p>
+          <div class="grid cols3" style="margin-top:16px">
+            <div class="kpi"><div class="label">Wines</div><div class="num" id="kpiWines">0</div><div class="hint">Add, flag and assign.</div></div>
+            <div class="kpi"><div class="label">Courses</div><div class="num" id="kpiCourses">0</div><div class="hint">Editable food and pairings.</div></div>
+            <div class="kpi"><div class="label">Usage today</div><div class="num" id="kpiBottles">0.00</div><div class="hint">Bottle fractions for POS.</div></div>
+          </div>
+          <div class="grid cols3" style="margin-top:16px">
+            <div class="listitem"><b>Educate without lecturing</b><p>Give staff quick notes, facts and pairing logic they can use at the table.</p></div>
+            <div class="listitem"><b>Showcase the unusual</b><p>Use pairings to introduce left-field wines, lesser-known grapes and producers guests may not choose by the bottle.</p></div>
+            <div class="listitem"><b>Track what was poured</b><p>Convert pairing sets and individual glasses into bottle fractions for end-of-night stock keeping.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="font-size:24px;margin-bottom:12px">Service workflow</h3>
+          <div class="list">
+            <div class="listitem"><b>1. Add your wine list</b><p>Use Admin → Wines / import to add wines manually or upload the CSV template.</p></div>
+            <div class="listitem"><b>2. Build the menu pairing</b><p>Edit dishes, assign wines and set pour sizes.</p></div>
+            <div class="listitem"><b>3. Print service sheets</b><p>Guest card for the table. Staff sheet for notes, facts and open-drink pricing.</p></div>
+            <div class="listitem"><b>4. Save usage</b><p>Enter pairing sets and any individual glasses poured for stock tracking.</p></div>
+          </div>
+          <div class="callout" style="margin-top:14px"><b>Built for service:</b> keep the wine list, menu pairings, staff notes, guest printouts and POS usage report in one place.</div>
+        </div>
       </div>
     </section>
 
